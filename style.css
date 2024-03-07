@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    font-family: sans-serif;
+}
+/* nav style start here */
+.navbar{
+    width:100%;
+    height: 100px;
+    background-color:#694f65;
+    z-index: 11;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.logo{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.nev-items{
+    display: flex;
+    gap: 1rem;
+    color: #312E81;
+    font-size: 50px;
+} 
+.nev-items a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: .4s;
+} 
+.nev-items a:hover{
+ color: rgb(5, 5, 5); 
+} 
+.nav-btn{
+    color:#EDC946;
+    
+}
+.nav-icon{
+    font-size: 1.8rem;
+    color: #312E81;
+}
+#menu1{
+    display: none;
+}
+/* nav style ends here */
+/*------------ header style start here */
+.header{
+    width: 100%;
+    height: 90vh;
+    
+    background-image: url(./neom-Kcna6XWDY7w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+.header-content{
+    color: #fff;
+    width: 30%;
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+.header-card{
+    width: 40%;
+    height: 20rem;
+    background-color: #FFF;
+    padding: 2rem;
+   box-shadow: 0  0 4px 2px black;
+   border-radius: 10px;
+}
+.header-card h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+    font-size: 2rem;
+    color: #312E81;
+}
+.header-card p{
+    line-height: 1.5rem;
+    color:#3c3e42;
+}
+.header-card button{
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 35%;
+    background-color: #0866FF;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+.header-card button:hover{
+    background-color: #1F2937;
+    
+}
+/*************** header style ends here */
+/* about me start */
+#about-me{
+    width: 100%;
+   
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:conter;
+  
+}
+.about-me-img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #7794bd;
+    border-top-left-radius:60px ;
+    border-bottom-right-radius: 60px;
+    margin: 2rem 2rem;
+    background-color: #7794bd;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px  rgba(0,0,0,.22) ;
+}
+.about-me-img img{
+    border: 2px solid #ffffff;
+    border-top-left-radius:60px ;
+    border-bottom-right-radius: 60px;
+    background-color: #ffffff;
+    padding: -10px -10px;
+}
+.skills h3{
+    margin: 5px;
+}
+.skills{
+    width: 60%;
+    margin:2rem 0;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px  rgba(0,0,0,.22) ;
+    background-color: #7794bd;
+    border-radius: 10px;
+    
+}
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background-color: #0866FF;
+    display: block;
+    height: 20px;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px  rgba(0,0,0,.22) ;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px  rgba(0,0,0,.22) ;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+}
+.html{
+    width: 90%;
+    
+    animation: html 3s;
+}
+.css{
+    width: 50%;
+    animation: css 3s;
+}
+.js{
+    width: 99%;
+    animation: js 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 99%;
+    }
+}
+/* about me ennds */
+/********************************** services srart here */
+.services{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(255, 255, 255);
+    padding-top: 2rem;
+}
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1808ff;
+
+}
+.service-title{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+.service-dtls{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4rem;
+}
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 2rem;
+    padding: 2rem 2rem;
+    
+}
+.service-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   padding: 1rem 1rem;
+   box-shadow: 2px 2px 5px black;
+   border-radius: 10px;
+}
+.service-icon{
+    font-size: 1.8rem;
+}
+.ri-html5-fill{
+    color: #e25125;
+}
+.ri-css3-fill{
+    color: #0866FF;
+}
+.service-card-btn{
+    border: none;
+    background-color: #fff;
+    padding: 0;
+
+}
+.service-card-btn a{
+    text-decoration: none;
+}
+/****************************** services ends here */
+/*------------------------------ portfolio start here */
+#portfolio{
+    width: 100%;
+    height: 130vh;
+    background-color: #ffffff;
+    padding: 2rem 2rem;
+}
+.portfolio{
+    display: flex;
+    justify-content: center;
+    color: #0866FF;
+}
+.portfolio-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+.portfolio-dtls{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+.portfolio-cards{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 2rem;
+    padding: 2rem 2rem;
+    
+}
+.portfolio-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+#side-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    border-radius: 10px;
+}
+.portfolio-card{
+    transition:transform .4s;
+    box-shadow: 2px 2px 3px black;
+    border: 1px solid rgb(0, 0, 0);
+}
+.portfolio-card:hover{
+    background-color: rgba(128, 128, 128, 0.61);
+    transform: scale(1.1);
+}
+/*------------------------------ portfolio ends here */
+
+/* contact start here */
+#contact{
+    width: 100%;
+    height: 96vh;
+}
+.contact{
+    text-align: center;
+    color: #0866FF;
+}
+.contact-forms{
+   gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    margin: 0 4rem;
+}
+.contact-form input{
+    width: 35rem;
+    height: 3rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #0866FF;
+}
+.contact-form textarea{
+    width: 35rem;
+    height: 10rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #0866FF;
+}
+
+.contact-forms button{
+    width: 35rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1px solid #0866FF;
+    padding: .9rem 0;
+    font-size: 1.2rem;
+    background-color: #0866FF;
+    color: #fff;
+    cursor: pointer;
+}
+/* contact ends here */
+/************************ footer style start here */
+.footer{
+    width: 100%;
+    height: 80px;
+    
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+}
+.footer-icons{
+    font-size: 1.6rem;
+}
+.ri-facebook-line{
+    background-color: #0866FF;
+    border-radius: 5px;
+}
+
+.ri-instagram-line{
+    background-color: #FB0862;
+    border-radius: 5px;
+}
+.ri-youtube-fill{
+    color:red;
+    font-size: 30px;
+}
+
+/*_______________________ footer style ends here */ 
+
+/* ******* 992px skin */
+@media (max-width:992px) {
+    /* nevbar */
+    .navbar{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(189, 211, 204);
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+   .nev-items{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    #menu1{
+        display: block;
+        font-size: 2.5rem;
+    }
+    .logo h1{
+        font-size: 1.3em;
+    }
+    /* navbar */
+    /***************** header start here */
+    .header{
+        width: 100%;
+        height: 40vh;
+        margin-left:10px;
+        
+    }
+    .header-content h1{
+        font-size: 2rem;
+        
+    }
+    .header-card{
+        display: none;
+    }
+    /******************** header ends here */
+
+      /* about me */
+      #about-me{
+        width:100%;
+        margin-left:10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:conter;
+      
+    }
+    .about-me-img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .skills{
+        width: 100%;
+    }
+    /* about me */
+    /* service */
+    .service-cards{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        gap: 2rem;
+        padding: 2rem 2rem;
+        margin-left:10px;
+    }
+    .services{
+        height: 100%;
+    }
+    /* service */
+    
+    /* portfolio */
+    .portfolio-cards{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        gap: 1.5rem;
+        padding: 1rem 1rem;
+        
+    }
+    #portfolio{
+        height: 100%;
+        width: 100%;
+        margin-left:10px;
+    }
+    /* portfolio */
+
+    /*********** contact */
+    #contact{
+        width: 100%;
+        height: 100%;
+        margin-left:10px;
+    }
+    .contact-form input{
+        width: 25rem;
+        height: 3rem;
+       margin: 0 1rem;
+    }
+    .contact-form textarea{
+        width: 25rem;
+        height: 10rem;
+        margin: 0 1rem;
+    }
+.contact-forms button{
+    width: 25rem;
+    margin: 0 1rem;
+}
+    /********** contact */
+    /* footer */
+    .footer{
+        width: 100%;
+        height: 60px;
+        margin-left: 0%;
+        margin-right: 0;
+        background-color: #1F2937;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        color: #fff;
+    }
+    .footer-dtl{
+        display: none;
+    }
+  
+    /* footer */
+}
